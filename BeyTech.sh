@@ -165,10 +165,10 @@ case $choice in
   *)
     echo "无效的输入!"
 
-esac
-  echo -e "\033[0;32m操作完成\033[0m"
-  echo "按任意键继续..."
-  read -n 1 -s -r -p ""
-  echo ""
-  clear
+#esac
+#  echo -e "\033[0;32m操作完成\033[0m"
+#  echo "按任意键继续..."
+#  read -n 1 -s -r -p ""
+#  echo ""
+#  clear
 done
