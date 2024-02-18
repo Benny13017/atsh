@@ -43,8 +43,11 @@ echo "开始检测VPS信息..."
 echo "======================"
 echo "操作系统信息:" 
 detect_os
-echo "CPU信息:"detect_cpu
-echo "内存信息:"detect_memory
-echo "磁盘空间信息:"detect_disk
+echo "CPU信息:"
+detect_cpu
+echo "内存信息:"
+detect_memory
+echo "磁盘空间信息:"
+detect_disk
 echo "======================"
 echo "VPS信息检测完成。"
