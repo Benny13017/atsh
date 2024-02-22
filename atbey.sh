@@ -49,8 +49,10 @@ while true ; do
        read -p "请输入你的选择" choice
       case $choice in
       1)
-      ; ;
+      Clear
+      VPS_System
+      ;;
       2)
-      ; ;
+      ;;
       esac
 done
