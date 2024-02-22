@@ -32,7 +32,8 @@ function VPS_Disk(){
           TOTAL_DISK=$(df -h | awk '$NF=="/"{print $2}')
           echo "总磁盘空间：$TOTAL_DISK"
 }
-while true ; do
+while true 
+do
        echo " ____"
        echo "| __ )  ___ _ __  _ __  _   _"
        echo "|  _ \ / _ \ '_ \| '_ \| | | |"
@@ -46,31 +47,26 @@ while true ; do
        echo "3.查询VPS的核心数"
        echo "4.查询VPS的内存"
        echo "5.查询VPS的硬盘"
-       read -p "请输入你的选择:" choice
+       read -p "Please input your choice:" choice
       case $choice in
       1)
-      Clear
-      VPS_System
-      ;;
+              VPS_System
+              ;;
       2)
-      Clear
-      VPS_CPU
-      ;;
+              VPS_CPU
+              ;;
       3)
-      Clear
-      VPS_Core
-      ;;
+              VPS_Core
+              ;;
       4)
-      Clear
-      VPS_Memory
-      ;;
+              VPS_Memory
+              ;;
       5)
-      Clear
-      VPS_Disk
-      ;;
+              VPS_Disk
+              ;;
       q|Q)
-      exist
-      ;;
+              exist
+              ;;
       *)
       echo "unvariable input"
       
