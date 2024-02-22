@@ -53,6 +53,26 @@ while true ; do
       VPS_System
       ;;
       2)
+      Clear
+      VPS_CPU
       ;;
+      3)
+      Clear
+      VPS_Core
+      ;;
+      4)
+      Clear
+      VPS_Memory
+      ;;
+      5)
+      Clear
+      VPS_Disk
+      ;;
+      q|Q)
+      exist
+      ;;
+      *)
+      echo "unvariable input"
+      
       esac
 done
