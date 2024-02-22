@@ -32,8 +32,7 @@ function VPS_Disk(){
           TOTAL_DISK=$(df -h | awk '$NF=="/"{print $2}')
           echo "总磁盘空间：$TOTAL_DISK"
 }
-while true 
-do
+function printf(){
        echo " ____"
        echo "| __ )  ___ _ __  _ __  _   _"
        echo "|  _ \ / _ \ '_ \| '_ \| | | |"
@@ -42,12 +41,17 @@ do
        echo "                        |___/"
        echo "Benny 一键脚本工具"
        echo "-------------------------------------------"
-       echo "1.查询VPS的系统版本"
-       echo "2.查询VPS的CPU"
-       echo "3.查询VPS的核心数"
-       echo "4.查询VPS的内存"
-       echo "5.查询VPS的硬盘"
-       read -p "Please input your choice:" choice
+       echo "(1) 查询VPS的系统版本"
+       echo "(2) 查询VPS的CPU"
+       echo "(3) 查询VPS的核心数"
+       echo "(4) 查询VPS的内存"
+       echo "(5) 查询VPS的硬盘"
+}
+while true 
+do
+      echo
+      printf       
+      read -p "Please input your choice:" choice
       case $choice in
       1)
               VPS_System
