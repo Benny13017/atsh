@@ -65,10 +65,10 @@ do
               VPS_Disk
               ;;
       q|Q)
-              exist
+              exit
               ;;
       *)
       echo "unvariable input"
-      
+              ;;
       esac
 done
