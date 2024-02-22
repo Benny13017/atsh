@@ -46,7 +46,7 @@ while true ; do
        echo "3.查询VPS的核心数"
        echo "4.查询VPS的内存"
        echo "5.查询VPS的硬盘"
-       read -p "请输入你的选择" choice
+       read -p "请输入你的选择:" choice
       case $choice in
       1)
       Clear
